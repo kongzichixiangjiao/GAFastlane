@@ -1,0 +1,8 @@
+app_identifier("jianan.GAFastlane") # The bundle identifier of your app
+apple_id("3342973662@qq.com") # Your Apple email address
+
+itc_team_id("118704490") # App Store Connect Team ID
+team_id("HGA4995V4J") # Developer Portal Team ID
+
+# For more information about the Appfile, see:
+#     https://docs.fastlane.tools/advanced/#appfile

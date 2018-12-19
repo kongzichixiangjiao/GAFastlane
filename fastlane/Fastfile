@@ -1,0 +1,60 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+
+default_platform(:ios)
+
+platform :ios do
+  
+
+#App Store
+desc "上传新版本到 App Store"
+  lane :release do
+  # 增加build版本号
+  #  increment_build_number
+    scheme_name="GAFastlane"  
+    # 导出路径
+    output_directory="/Users/houjianan/Desktop/ipa"
+#版本号
+    scheme_version="1.0.0.4"
+    #导出名称 
+    output_name="#{scheme_name}_#{scheme_version}_#{Time.now.strftime('%Y%m%d%H%M%S')}.ipa"
+    gym(
+      export_method: "app-store", #这里填写导出方式 
+      export_xcargs: "-allowProvisioningUpdates", 
+      scheme: scheme_name,# target的名字
+      clean: true, # 在构建前先clean
+      output_directory: output_directory,
+      output_name: output_name,
+    ) 
+    # 上传AppStore
+    deliver(
+	  submit_for_review: false # 提交审核
+	)
+  end
+#svn
+
+
+#蒲公英
+ lane :beta do
+  build_app(export_method: "development")
+  pgyer(api_key: "7885ff7b7db2ddb8d010ed0ffafb21e2", user_key: "c27276980b6d46de09ba3b6630ce7d5f")
+end
+
+
+
+
+
+end
