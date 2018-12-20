@@ -4,21 +4,18 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GAFastlane.xcscheme_^#shared#^_</key>
+		<key>Pods-GAFastlane.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<true/>
-			<key>orderHint</key>
-			<integer>0</integer>
+			<false/>
+		</dict>
+		<key>YYLoginTextFeild.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
-	<dict>
-		<key>DCA2B0CD21CA1D30006E3714</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-	</dict>
+	<dict/>
 </dict>
 </plist>

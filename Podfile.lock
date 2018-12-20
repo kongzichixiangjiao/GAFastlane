@@ -1,0 +1,16 @@
+PODS:
+  - YYLoginTextFeild (0.1.9)
+
+DEPENDENCIES:
+  - YYLoginTextFeild
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - YYLoginTextFeild
+
+SPEC CHECKSUMS:
+  YYLoginTextFeild: 97acef26c5f3ada517477706ce90be50e4d88880
+
+PODFILE CHECKSUM: c212a79c8b8ccb175c752d09f3ca0557f22a9249
+
+COCOAPODS: 1.5.3

@@ -1,0 +1,6 @@
+framework module Pods_GAFastlane {
+  umbrella header "Pods-GAFastlane-umbrella.h"
+
+  export *
+  module * { export * }
+}

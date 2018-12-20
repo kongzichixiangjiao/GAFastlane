@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0200EF184CE1DE13157BF9C5 /* Pods_GAFastlane.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A02752516933864F5159739 /* Pods_GAFastlane.framework */; };
 		DCA2B0D221CA1D30006E3714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA2B0D121CA1D30006E3714 /* AppDelegate.swift */; };
 		DCA2B0D421CA1D30006E3714 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA2B0D321CA1D30006E3714 /* ViewController.swift */; };
 		DCA2B0D721CA1D30006E3714 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA2B0D521CA1D30006E3714 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A02752516933864F5159739 /* Pods_GAFastlane.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GAFastlane.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C562453F0C04C99C3BAE009 /* Pods-GAFastlane.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAFastlane.release.xcconfig"; path = "Pods/Target Support Files/Pods-GAFastlane/Pods-GAFastlane.release.xcconfig"; sourceTree = "<group>"; };
+		D1B722C1E73893918EBFCAD9 /* Pods-GAFastlane.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GAFastlane.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GAFastlane/Pods-GAFastlane.debug.xcconfig"; sourceTree = "<group>"; };
 		DCA2B0CE21CA1D30006E3714 /* GAFastlane.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GAFastlane.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCA2B0D121CA1D30006E3714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCA2B0D321CA1D30006E3714 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0200EF184CE1DE13157BF9C5 /* Pods_GAFastlane.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B38713212F54429E8BAED7C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A02752516933864F5159739 /* Pods_GAFastlane.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6111B326BCCCECE50A22BDD0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1B722C1E73893918EBFCAD9 /* Pods-GAFastlane.debug.xcconfig */,
+				7C562453F0C04C99C3BAE009 /* Pods-GAFastlane.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DCA2B0C521CA1D30006E3714 = {
 			isa = PBXGroup;
 			children = (
 				DCA2B0D021CA1D30006E3714 /* GAFastlane */,
 				DCA2B0CF21CA1D30006E3714 /* Products */,
+				6111B326BCCCECE50A22BDD0 /* Pods */,
+				2B38713212F54429E8BAED7C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCA2B0E021CA1D31006E3714 /* Build configuration list for PBXNativeTarget "GAFastlane" */;
 			buildPhases = (
+				51FADC0A34066BD08D513558 /* [CP] Check Pods Manifest.lock */,
 				DCA2B0CA21CA1D30006E3714 /* Sources */,
 				DCA2B0CB21CA1D30006E3714 /* Frameworks */,
 				DCA2B0CC21CA1D30006E3714 /* Resources */,
+				2E9F418A7531B3EE7638B808 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E9F418A7531B3EE7638B808 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GAFastlane/Pods-GAFastlane-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YYLoginTextFeild/YYLoginTextFeild.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYLoginTextFeild.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GAFastlane/Pods-GAFastlane-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51FADC0A34066BD08D513558 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GAFastlane-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DCA2B0CA21CA1D30006E3714 /* Sources */ = {
@@ -280,6 +353,7 @@
 		};
 		DCA2B0E121CA1D31006E3714 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B722C1E73893918EBFCAD9 /* Pods-GAFastlane.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		DCA2B0E221CA1D31006E3714 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C562453F0C04C99C3BAE009 /* Pods-GAFastlane.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
