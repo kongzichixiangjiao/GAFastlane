@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Pods-GAFastlane.xcscheme</key>
+		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>YYLoginTextFeild.xcscheme</key>
+		<key>Pods-GAFastlane.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

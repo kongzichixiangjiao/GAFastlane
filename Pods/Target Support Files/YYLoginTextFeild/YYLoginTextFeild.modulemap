@@ -1,6 +1,0 @@
-framework module YYLoginTextFeild {
-  umbrella header "YYLoginTextFeild-umbrella.h"
-
-  export *
-  module * { export * }
-}

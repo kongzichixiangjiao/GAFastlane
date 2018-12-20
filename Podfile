@@ -3,6 +3,6 @@ inhibit_all_warnings!
 use_frameworks!
 
 target 'GAFastlane' do
-    pod "YYLoginTextFeild"
+    pod "Kingfisher"
 end
 

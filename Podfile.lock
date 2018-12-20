@@ -1,16 +1,16 @@
 PODS:
-  - YYLoginTextFeild (0.1.9)
+  - Kingfisher (4.8.1)
 
 DEPENDENCIES:
-  - YYLoginTextFeild
+  - Kingfisher
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
-    - YYLoginTextFeild
+    - Kingfisher
 
 SPEC CHECKSUMS:
-  YYLoginTextFeild: 97acef26c5f3ada517477706ce90be50e4d88880
+  Kingfisher: 868c1149679a7ab6869be118faa9b5aed154aaf0
 
-PODFILE CHECKSUM: c212a79c8b8ccb175c752d09f3ca0557f22a9249
+PODFILE CHECKSUM: 34546b300d478e45edca7d62f6dcc6b31a35721a
 
 COCOAPODS: 1.5.3
